@@ -2,15 +2,15 @@ import React from "react";
 
 export default function DisplayWeather(props) {
   const {
-    location,
     temperature,
-    weather_descriptions,
+    description,
+    location,
     region,
+    country,
     wind_speed,
     pressure,
     precip,
     humidity,
-    name,
     img,
   } = props.weatherData;
   return (
@@ -19,12 +19,13 @@ export default function DisplayWeather(props) {
         <div className="col-md-3 weather-temp">
           <h1>
             {temperature}
-            <sup>o</sup>C , {weather_descriptions}
-          </h1>{location}
+            <sup>o</sup>C , {description}
+          </h1>
+          {location}
           <h4>
-            {name} , {region}
+            {country} , {region}
           </h4>
-          <p>  </p>
+          <p> </p>
         </div>
 
         <div className="col-md-9">
