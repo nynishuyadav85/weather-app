@@ -6,7 +6,6 @@ export default function DisplayWeather(props) {
     temperature,
     weather_descriptions,
     region,
-    country,
     wind_speed,
     pressure,
     precip,

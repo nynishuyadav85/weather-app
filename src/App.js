@@ -31,7 +31,7 @@ class App extends React.Component {
         wind_speed: res.data.current.wind_speed,
         temperature: res.data.current.temperature,
         weather_descriptions: res.data.current.weather_descriptions[0],
-        country: res.data.location.country,
+        // country: res.data.location.country,
         img: res.data.current.weather_icons,
       };
       this.setState({ data: weatherData });
